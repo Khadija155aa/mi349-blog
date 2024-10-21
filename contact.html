@@ -19,43 +19,40 @@
     </header>
 
     <main>
-        <article>
-            <header>
-                <h2>Get in Touch</h2>
-                <p>If you have any questions, need a contractor, or want to interview me, feel free to reach out!</p>
-                <p><time datetime="2024-10-18">October 18, 2024</time> by <span>Khadija</span></p>
-            </header>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, recipe requests, or just want to say hello, feel free to reach out!</p>
 
-            <!-- Contact Form -->
+            
             <form action="#" method="post">
-                <!-- Name Field -->
+                
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" required aria-label="Your Name"><br><br>
 
-                <!-- Email Address Field -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-label="Your Email"><br><br>
 
-                <!-- Reason for Contact Dropdown -->
+               
                 <label for="reason">Reason for Contact:</label>
-                <select id="reason" name="reason" required>
+                <select id="reason" name="reason" required aria-label="Reason for Contact">
                     <option value="saying_hi">Saying Hi</option>
-                    <option value="looking_for_contractor">Looking for a Contractor</option>
-                    <option value="interested_in_interview">Interested in an Interview</option>
+                    <option value="recipe_request">Recipe Request</option>
+                    <option value="feedback_on_blog">Feedback on Blog</option>
                 </select><br><br>
 
-                <!-- Open Comment Textarea -->
+                
                 <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="5" cols="40" required></textarea><br><br>
+                <textarea id="comments" name="comments" rows="5" cols="40" aria-label="Your Comments"></textarea><br><br>
 
-                <!-- Submit Button -->
+                
                 <input type="submit" value="Submit">
             </form>
-        </article>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <time datetime="2024">2024</time> Khadija's Recipes</p>
+        <p>&copy; <time datetime="2024">2024</time> Khadija</p>
     </footer>
 </body>
 </html>
