@@ -1,25 +1,60 @@
-<form action="#" method="post" class="form-container">
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required aria-label="Your Name">
-    </div>
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required aria-label="Your Email">
-    </div>
-    <div class="form-group">
-        <label for="reason">Reason for Contact:</label>
-        <select id="reason" name="reason" required aria-label="Reason for Contact">
-            <option value="saying_hi">Saying Hi</option>
-            <option value="recipe_request">Recipe Request</option>
-            <option value="feedback_on_blog">Feedback on Blog</option>
-        </select>
-    </div>
-    <div class="form-group full-width">
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="5" cols="40" aria-label="Your Comments"></textarea>
-    </div>
-    <div class="form-group full-width">
-        <input type="submit" value="Submit">
-    </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Khadija">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Khadija</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, recipe requests, or just want to say hello, feel free to reach out!</p>
+
+            <form action="#" method="post" class="form-container">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Contact:</label>
+                    <select id="reason" name="reason" required aria-label="Reason for Contact">
+                        <option value="saying_hi">Saying Hi</option>
+                        <option value="recipe_request">Recipe Request</option>
+                        <option value="feedback_on_blog">Feedback on Blog</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" cols="40" aria-label="Your Comments"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2024">2024</time> Khadija</p>
+    </footer>
+</body>
+</html>
