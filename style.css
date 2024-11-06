@@ -7,14 +7,13 @@ body {
     margin: 40px;
     padding: 40px;
     background: #fff;
-    border-top: 10px soild #555;
+    border-top: 10px soild #555
 }
 
 h1 {
-    color: #333;
     font-size: 3rem;
     margin: 0;
-    
+    color: #fff;
 }
 
 p {
@@ -42,6 +41,8 @@ border-top: 1px dotted #eee;
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
 }
 
 /* Attribute selector */
