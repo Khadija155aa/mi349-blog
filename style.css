@@ -27,20 +27,18 @@ p {
     margin-bottom: 15px;
 }
 
-/* Flexbox layout for main content */
-.main-content {
+/* Flexbox layout for Hobbies & Interests section */
+.hobbies ul {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.main-content section {
-    flex: 2; /* This makes the text section take up more space */
-}
-
-.main-content img {
-    flex: 1; /* This makes the image take up less space */
-    max-width: 100%; /* Ensures the image does not overflow */
-    border-radius: 8px; /* Optional: add some rounding to the image */
+.hobbies li {
+    flex: 1 1 45%; /* Each item takes 45% of the container width */
+    margin: 0.5em 0;
 }
 
 
