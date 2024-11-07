@@ -28,26 +28,29 @@ p {
 }
 
 /* Flexbox layout for Hobbies & Interests section */
-.hobbies ul {
+.hobbies-interests {
     display: flex;
-    flex-wrap: wrap;
+    gap: 1em; /* Adds space between the boxes */
+    margin-top: 1em;
+}
+
+.hobby-box, .interest-box {
+    flex: 1;
+    background-color: #f9f5f0;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for lists inside each box */
+.hobby-box ul, .interest-box ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.hobbies li {
-    flex: 1 1 45%; /* Makes each item 45% of the container width for two columns */
-    margin: 0.5em 0;
-}
-
-/* Styling for each hobby box */
-.hobby-box {
-    background-color: #f9f5f0; /* Light, matching background color */
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for effect */
-    color: #333; /* Text color */
+.hobby-box ul li, .interest-box ul li {
+    margin-bottom: 0.5em;
 }
 
 
